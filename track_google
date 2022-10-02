@@ -20,3 +20,4 @@ system/security
 system/vold
 system/sepolicy
 system/update_engine
+packages/apps/ThemePicker
