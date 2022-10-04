@@ -196,9 +196,6 @@ case $job in
             echo "Resetting repo manifest..."
             (cd .repo/manifests && git checkout -- . )
 
-            echo ${ylw}"Syncing repo manifest..."${txtrst}
-            repo init -u git://github.com/crdroidandroid/android.git -b 12.1 -q
-
             echo ${ylw}"Modifying release version in repo manifest..."${txtrst}
             sed -i "s|android-13.0.0_r$(expr $revision - 1)|android-13.0.0_r$revision|g" .repo/manifests/default.xml
 
@@ -274,11 +271,6 @@ case $job in
             push_repos $force
             rm $SCRIPT_PATH/merge_succeeded $SCRIPT_PATH/merge_failed 2>/dev/null
 
-            echo "Resetting repo manifest..."
-            (cd .repo/manifests && git checkout -- . )
-
-            echo ${ylw}"Syncing repo manifest..."${txtrst}
-            repo init -u https://github.com/crdroidandroid/android.git -b 12.1
         fi
         exit
     ;;
