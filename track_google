@@ -1,9 +1,13 @@
 build/make
 build/soong
+art
 bionic
+bootable/recovery
 hardware/libhardware
 hardware/interfaces
 external/tinycompress
+external/gptfdisk
+external/mksh
 frameworks/av
 frameworks/base
 frameworks/native
@@ -11,6 +15,10 @@ packages/apps/Settings
 packages/apps/SettingsIntelligence
 packages/services/Telephony
 packages/services/Telecomm
+packages/apps/ThemePicker
+packages/apps/Dialer
+packages/apps/Launcher3
+packages/modules/Permission
 system/core
 system/extras
 system/media
@@ -19,10 +27,3 @@ system/security
 system/vold
 system/sepolicy
 system/update_engine
-packages/apps/ThemePicker
-packages/apps/Dialer
-packages/apps/Launcher3
-external/gptfdisk
-external/mksh
-bootable/recovery
-art
