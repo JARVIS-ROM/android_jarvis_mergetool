@@ -14,12 +14,14 @@ frameworks/native
 frameworks/opt/calendar
 packages/apps/Settings
 packages/apps/SettingsIntelligence
-packages/services/Telephony
-packages/services/Telecomm
 packages/apps/ThemePicker
 packages/apps/Dialer
 packages/apps/Launcher3
 packages/modules/Permission
+packages/services/Telephony
+packages/services/Telecomm
+packages/inputmethods/LatinIME
+packages/apps/Messaging
 system/core
 system/extras
 system/media

@@ -81,8 +81,8 @@ fetch_and_merge() {
     if [ $repo == "android_android" ]; then
         link=${link//_android}
     fi
-    if [ $repo == "android_build_make" ]; then
-        link=${link//_make}
+    if [ $repo == "build/make" ]; then
+        link=${link//_build}
     fi
     if [ $repo == "android_device_qcom_sepolicy-legacy-um" ]; then
         link=${link//-legacy-um}
